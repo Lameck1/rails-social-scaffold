@@ -88,13 +88,33 @@ This project also includes API feature for interacting with certain endpoints
 - All API requests must have the `auth_token` attached to the url endpoints eg:
 
 ```
-http://localhost:3000/api/v1/posts/1/comments?auth_token=<your_auth_token>
+http://localhost:3000/api/v1/posts/1/comments?auth_token=:your_auth_token_here
 ```
 
 - This project supports API interactions using the following endpoints:
+
   - GET `/api/v1/posts` for getting the list of posts
+
+    - `http://localhost:3000/api/v1/posts?auth_token=:your_auth_token_here`
+
   - GET `/api/v1/posts/:post_id/comments` for getting list of comments on a post
+
+    - `http://localhost:3000/api/v1/posts/:post_id/comments?auth_token=:your_auth_token_here`
+
   - POST `/api/v1/posts/:post_id/comments` for posting a comment to a post
+
+    - `http://localhost:3000/api/v1/posts/:post_id/comments?auth_token=:your_auth_token_here`
+
+            Example Request body
+
+            ```json
+            {
+                "comment": {
+                    "content": "Comment body here!!"
+                }
+            }
+
+            ```
 
 ## Contributing
 

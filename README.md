@@ -15,6 +15,8 @@
 
 This project builds on an existing project forked at [microverseinc](https://github.com/microverseinc/ror-social-scaffold). It a small scale social media project where users have the ability to send and receive friend requests, write post and comment on post. A user can choose to Accept or Reject a friend request and can also cancel a friend request sent.
 
+This project also includes API feature for interacting with certain endpoints
+
 ![screenshot](./timeline.PNG)
 
 ## ## [Live Demo](https://ror-social-scaffold.herokuapp.com/)

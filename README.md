@@ -113,7 +113,6 @@ http://localhost:3000/api/v1/posts/1/comments?auth_token=:your_auth_token_here
                     "content": "Comment body here!!"
                 }
             }
-
             ```
 
 ## Contributing

@@ -2,14 +2,14 @@
 
 ## Table of Contents
 
-* [About the Project](#about-the-project)
-* [Built With](#built-with)
-* [Getting Started](#getting-started)
-* [Prerequisites](#prerequisites)
-* [API Documentation](#api-documentation)
-* [Contributing](#contributing)
-* [Author](#author)
-* [Acknowledgements](#acknowledgements)
+- [About the Project](#about-the-project)
+- [Built With](#built-with)
+- [Getting Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [API Documentation](#api-documentation)
+- [Contributing](#contributing)
+- [Author](#author)
+- [Acknowledgements](#acknowledgements)
 
 ## About Project
 
@@ -29,59 +29,55 @@ This project also includes API feature for interacting with certain endpoints
 
 ## Getting Started
 
-* Clone this repo https://github.com/Lameck1/ror-social-scaffold
-    ```
-    git clone https://github.com/Lameck1/ror-social-scaffold.git
-    ```
-* Navigate to private-events folder
-    ```
-    cd ror-social-scaffold
-    ```
-* On the terminal, while in the 'ror-social-scaffold' directory, run the following to install dependency:
-    ```
-    bundle install
-    ```
-* At this point, you still don't have the Postgress database. Run the following to get setup:
+- Clone this repo https://github.com/Lameck1/ror-social-scaffold
+  ```
+  git clone https://github.com/Lameck1/ror-social-scaffold.git
+  ```
+- Navigate to private-events folder
+  ```
+  cd ror-social-scaffold
+  ```
+- On the terminal, while in the 'ror-social-scaffold' directory, run the following to install dependency:
+  ```
+  bundle install
+  ```
+- At this point, you still don't have the Postgress database. Run the following to get setup:
 
   - Ensure that postgresql service is up and runnning
-        ```
-        sudo service postgresql start
-        ```
+    `sudo service postgresql start`
   - Create the database
-        ```
-        rails db:create
-        ```
+    `rails db:create`
 
   - Migrate the database
-        ```
-        rails db:migrate
-        ```
+    `rails db:migrate`
 
-* To interact with the project, run:
-    ```
-    rails server
-    ```
+- To interact with the project, run:
 
-    OR
+  ```
+  rails server
+  ```
 
-    ```
-    rails s
-    ```
-* Go to the browser and enter 
-    ```http://localhost:3000```
+  OR
 
+  ```
+  rails s
+  ```
+
+- Go to the browser and enter
+  `http://localhost:3000`
 
 ### Prerequisites
 
 - Ensure you have these installed:
-    - Git
-    - Ruby 2.7.2
-    - Ruby on rails ```gem install rails```
+
+  - Git
+  - Ruby 2.7.2
+  - Ruby on rails `gem install rails`
 
 - You also need to ensure your yarn is upto date
-    ```
-    yarn install --check-files
-    ```
+  ```
+  yarn install --check-files
+  ```
 
 ### API Documentation
 
@@ -90,6 +86,7 @@ This project also includes API feature for interacting with certain endpoints
 - To get your `auth_token` visit your profile page by clicking your name on the Navbar
 
 - All API requests must have the `auth_token` attached to the url endpoints eg:
+
 ```
 http://localhost:3000/api/v1/posts/1/comments?auth_token=<your_auth_token>
 ```
@@ -108,9 +105,10 @@ Feel free to check the [issues page](https://github.com/Lameck1/ror-social-scaff
 ## Authors
 
 👤 **Lameck Otieno**
-  - GitHub: [@githubhandle](https://github.com/Lameck1)
-  - Twitter: [@twitterhandle](https://twitter.com/lameck721)
-  - LinkedIn: [LinkedIn](https://www.linkedin.com/in/lameck-odhiambo-642b7077/)
+
+- GitHub: [@githubhandle](https://github.com/Lameck1)
+- Twitter: [@twitterhandle](https://twitter.com/lameck721)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/lameck-odhiambo-642b7077/)
 
 👤 **Teddy-Livingstone Ememandu**
 
@@ -120,7 +118,8 @@ Feel free to check the [issues page](https://github.com/Lameck1/ror-social-scaff
 ## Acknowledgements
 
 Credits go to the following for providing guides on Ruby on Rails Association
-  - [**Rails Guides**](https://guides.rubyonrails.org/association_basics.html)
+
+- [**Rails Guides**](https://guides.rubyonrails.org/association_basics.html)
 
 ## Show your support
 

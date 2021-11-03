@@ -18,4 +18,10 @@ class Api::V1::CommentsController < Api::V1::ApiController
       render json: @comment.errors, status: :bad_request, message: 'Operation failed'
     end
   end
+
+  private
+
+  def comment_params
+    params.require(:comment).permit(:content)
+  end
 end

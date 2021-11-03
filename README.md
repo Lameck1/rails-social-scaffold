@@ -6,6 +6,7 @@
 * [Built With](#built-with)
 * [Getting Started](#getting-started)
 * [Prerequisites](#prerequisites)
+* [API Documentation](#api-documentation)
 * [Contributing](#contributing)
 * [Author](#author)
 * [Acknowledgements](#acknowledgements)
@@ -80,18 +81,39 @@ This project builds on an existing project forked at [microverseinc](https://git
     yarn install --check-files
     ```
 
+### API Documentation
+
+- In order to use the API feature of this application you must be a logged in user
+
+- To get your `auth_token` visit your profile page by clicking your name on the Navbar
+
+- All API requests must have the `auth_token` attached to the url endpoints eg:
+```
+http://localhost:3000/api/v1/posts/1/comments?auth_token=<your_auth_token>
+```
+
+- This project supports API interactions using the following endpoints:
+  - GET `/api/v1/posts` for getting the list of posts
+  - GET `/api/v1/posts/:post_id/comments` for getting list of comments on a post
+  - POST `/api/v1/posts/:post_id/comments` for posting a comment to a post
+
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/Lameck1/ror-social-scaffold/issues).
 
-## Author
+## Authors
 
 👤 **Lameck Otieno**
   - GitHub: [@githubhandle](https://github.com/Lameck1)
   - Twitter: [@twitterhandle](https://twitter.com/lameck721)
   - LinkedIn: [LinkedIn](https://www.linkedin.com/in/lameck-odhiambo-642b7077/)
+
+👤 **Teddy-Livingstone Ememandu**
+
+- [Github](https://github.com/TedLivist)
+- [Linkedin](https://www.linkedin.com/in/tememandu)
 
 ## Acknowledgements
 

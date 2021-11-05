@@ -3,7 +3,7 @@ class Api::V1::PostsController < Api::V1::ApiController
 
   def show
     @post = Post.find(params[:id])
-    render json: @post
+    render json: @post, status: 200
   end
 
   def index
@@ -15,9 +15,9 @@ class Api::V1::PostsController < Api::V1::ApiController
     @post = current_user.posts.new(post_params)
 
     if @post.save
-      render json: @post, status: :created
+      render json: @post, status: 201
     else
-      render json: @post.errors, status: :bad_request, message: 'Operation failed'
+      render json: { errors: @post.errors }, status: 422
     end
   end
 
